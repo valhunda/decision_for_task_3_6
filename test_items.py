@@ -5,6 +5,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 
 def test_button_add_to_basket_exists_for_different_languages(browser):
+    browser.implicitly_wait(10)
     browser.get(link)
     # for manual testing
     # time.sleep(5)
